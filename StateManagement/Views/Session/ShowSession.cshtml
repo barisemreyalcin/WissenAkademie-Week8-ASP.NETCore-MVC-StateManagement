@@ -1,0 +1,23 @@
+﻿@{
+	ViewData["Title"] = "Show Session Information";
+}
+
+<div class="row justify-content-lg-center">
+	<div class="card">
+		<div class="card-header">
+			<h3 class="bg-info text-danger">~ Session Information ~</h3>
+		</div>
+		<div class="card-body">
+			<ul class="list-group">
+				<li class="list-group-item">Company Name: @ViewBag.AppName</li>
+				<li class="list-group-item">Person Name: @ViewBag.PersonName</li>
+				<li class="list-group-item">Person Age: @ViewBag.PersonAge</li>
+				<li class="list-group-item">Person Email: @ViewBag.PersonEmail</li>
+				<li class="list-group-item">Person Role: @ViewBag.Role</li>
+			</ul>
+		</div>
+		<div class="card-footer">
+			<a class="btn btn-warning btn-block" asp-action="Index" asp-controller="Session">Go back</a>
+		</div>
+	</div>
+</div>
